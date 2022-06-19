@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(56, 71, 102);
+}
+.main {
+    background-color: rgb(216, 230, 244);
+    width: 700px;
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    border-radius: 15px;
+    border-style: dotted;
+}
+.button_group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 300px;
+}
+.button_style {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 140px;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 20px;
+    height: 45px;
+}
+.input_style {
+    border-radius: 15px;
+    height: 24px;
+}
+@media screen and (max-width: 600px) {
+    .input_style {
+        width: max-width;
+    }
+    .main {
+        height: calc(max-content);
+    }
+    p {
+        font-size:larger;
+    }
+    .button_group {
+        width: 400px;
+    }
+    .button_style {
+        font-size:large;
+        width: 190px;
+    }
+}
